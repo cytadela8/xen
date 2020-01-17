@@ -260,7 +260,7 @@ SEABIOS_UPSTREAM_URL ?= http://xenbits.xen.org/git-http/seabios.git
 MINIOS_UPSTREAM_URL ?= http://xenbits.xen.org/git-http/mini-os.git
 else
 OVMF_UPSTREAM_URL ?= git://xenbits.xen.org/ovmf.git
-QEMU_UPSTREAM_URL ?= git://xenbits.xen.org/qemu-xen.git
+QEMU_UPSTREAM_URL ?= /home/ert/qemu-xen/
 QEMU_TRADITIONAL_URL ?= git://xenbits.xen.org/qemu-xen-traditional.git
 SEABIOS_UPSTREAM_URL ?= git://xenbits.xen.org/seabios.git
 MINIOS_UPSTREAM_URL ?= git://xenbits.xen.org/mini-os.git
