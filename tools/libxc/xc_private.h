@@ -275,10 +275,14 @@ static inline int do_domctl_maybe_retry_efault(xc_interface *xch,
         if ( errno == EACCES )
             DPRINTF("domctl operation failed -- need to"
                     " rebuild the user-space tool set?\n");
+	else
+		DPRINTF("Other error in do_domctl");
     }
 
     xc_hypercall_bounce_post(xch, domctl);
  out1:
+    if (ret != 0)
+	    PERROR("Error occured in do_domctl");
     return ret;
 }
 
